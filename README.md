@@ -3,22 +3,24 @@
 This module manages SystemD services files
 
 
-# Comptability
+## Comptability
 
 This module has been tested to work on the following systems.
 
 * EL 7
 
 
-# Parameters
+## Parameters
 
-# class systemd
+### class systemd
 
-## define systemd::units
-
+units
+-----
 define the unit parameters
 
-# class systemd::unit
+- *Default*: undef
+
+## define systemd::unit
 
 ensure
 ------
@@ -130,9 +132,9 @@ the most common way to specify how a unit should be enabled. This directive allo
 
 ## Sample Usage
 
-Define service "myservice" as a systemd unit.
+Define service 'myservice' as a systemd unit.
 
-<pre>
+```
 systemd::units:
   'myservice':
     unit_description: 'This is my service'
@@ -141,4 +143,4 @@ systemd::units:
     service_execstart: "/usr/bin/command run --fqdn %{fqdn}"
     service_execstop: "/usr/bin/command --kill"
     install_wantedby: 'multi-user.target'
-</pre>
+```
