@@ -11,7 +11,6 @@ This module has been tested to work on the following systems.
 
 
 # Parameters
-------------
 
 # class systemd
 
