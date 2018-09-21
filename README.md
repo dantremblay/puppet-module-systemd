@@ -76,7 +76,7 @@ User running the service.
 
 - *Default*: undef
 
-#### working_directory
+#### workingdirectory
 
 Defines on which directory the service will be launched from.
 
