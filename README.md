@@ -131,7 +131,7 @@ The most common way to specify how a unit should be enabled. This directive allo
 
 - *Default*: undef
 
-## Sample Usage
+## Example Usage
 
 Define service 'myservice' as a systemd unit.
 
